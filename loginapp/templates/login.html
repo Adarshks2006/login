@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>login</h1>
+    <form action="{% url 'addsign' %}" method="post">
+        {% csrf_token %}
+
+         <label for="text">Username:</label>
+        <input type="text" name="uname"><br><br>
+
+           <label for="text">Password:</label>
+        <input type="password" name="pwd"><br><br>
+
+          <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
